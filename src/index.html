@@ -1,29 +1,49 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
+    <title>Hello Rigo with Bootstrap</title>
     <link
       rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      integrity="sha384-w7YJEuFJ0UCSDvqAhTXzVE/y8NJ1CsrqH81qDpRtNuNwbWDxAGbB17A6sOLogz6a"
       crossorigin="anonymous"
     />
     <link rel="shortcut icon" href="./4geeks.ico" />
+    <style>
+      /* Center headings without affecting container responsiveness */
+      .text-center h1,
+      .text-center h2 {
+        text-align: center;
+      }
+
+      /* Style the GIF container with margin for aesthetics */
+      .gif-container {
+        margin-top: 2rem;
+        display: flex; /* Center the GIF horizontally */
+        justify-content: center;
+      }
+    </style>
   </head>
   <body>
     <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+      <h1 class="mt-5">OMG! YOU WILL NOT BELIEVE ME BUT ...!</h1>
+      <h2 id="myExcuse"></h2>
+
+      <div class="gif-container">
+        <img
+          id="gifImage"
+          src="https://media.giphy.com/media/P5AGXvRzq1MWY/source.gif"
+          alt="Initial GIF"
+        />
       </div>
     </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-KgbwajLWkooXNHTuHzNEsJAC0pBZq5RYQgU83aTmdSa5sWxnqFuqExa+zPCsLOjo"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
